@@ -44,4 +44,4 @@ This project predicts future prices of **Gold** and **Silver** using LSTM (Long 
 ---
 
 ## 📸 Screenshot
-![App Screenshot](./path-to-screenshot.png)
+![App Screenshot](Screenshot 2025-05-19 111336.png)

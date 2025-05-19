@@ -32,13 +32,29 @@ This project predicts future prices of **Gold** and **Silver** using LSTM (Long 
 
 📁 gold-silver-price-predictor
 │
+
 ├── app.py                         # Main Flask app
+
 ├── goldSilverPredictionUsingYFinance.py  # LSTM model logic
+
 ├── templates/
+
 │   └── index.html                # Web UI
+
 ├── static/
+
 │   └── style.css                # Custom styling
+
 ├── requirements.txt              # Python dependencies
+
+├── images/
+
+│   └── image.png
+
 └── README.md
 
 ---
+
+## 💻 Demo
+![App Screenshot](images/image.png)
+

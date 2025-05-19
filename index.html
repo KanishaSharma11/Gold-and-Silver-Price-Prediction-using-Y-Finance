@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gold & Silver Price Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Predict Gold/Silver Price</h1>
+        <form method="POST">
+            <label for="metal">Select Metal:</label>
+            <select name="metal" id="metal">
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+            </select>
+
+            <label for="day">Predict for future day (1-30, optional):</label>
+            <input type="number" id="day" name="day" min="1" max="30">
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+            <h2>Predicted {{ metal }} Price Today: ${{ prediction | round(2) }}</h2>
+        {% endif %}
+
+        {% if future_prediction %}
+            <h2>Predicted {{ metal }} Price for Day {{ day_selected }}: ${{ future_prediction | round(2) }}</h2>
+        {% endif %}
+
+        {% if trend_message %}
+            <p><strong>Trend:</strong> {{ trend_message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
